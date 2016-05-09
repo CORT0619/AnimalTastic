@@ -1,4 +1,4 @@
-/*body {font-family: Tahoma}*/
+body {font-weight: bold;}
 
 #animalButtons {border: 1px solid #000;}
 
@@ -20,4 +20,10 @@ button, input[type=submit] {background-color: #008080;
 input[type=text] {width: 400px;
 				  margin-bottom: 5px;
 				  margin-top: 5px;
-				  padding: 2px 0px 2px 2px;}										 
+				  padding: 2px 0px 2px 2px;}
+
+.animalDiv {display: inline-block;
+			margin: 20px 10px 20px 20px;
+			clear: both;}	
+
+.rating {margin-bottom: 20px;}		  										 
