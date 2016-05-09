@@ -1,4 +1,23 @@
-#submissionForm {float: right;}
+/*body {font-family: Tahoma}*/
+
+#animalButtons {border: 1px solid #000;}
+
+label {font-weight: bold}
+
+#submissionForm {float: right;
+				 margin-top: 25px;
+				 margin-right: 15px;}
 
 #animalPics {clear: both;
 			 float: left;}
+
+button, input[type=submit] {background-color: #008080;
+							color: #FFF;
+							border-radius: 5px;
+							padding: 4px 10px;
+							font-weight: bold;}
+
+input[type=text] {width: 400px;
+				  margin-bottom: 5px;
+				  margin-top: 5px;
+				  padding: 2px 0px 2px 2px;}										 
