@@ -1,15 +1,14 @@
 var textVal;
-	var newButton;
-	var apiUrl;
-	var apiPlus = "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg-13";
+var newButton;
+var apiUrl;
+var apiPlus = "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg-13";
+var status;
+
 	//var apiPlus = "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg";
 
 	$('#submit').on('click', function(){
 
 		textVal =  $('#getAnimal').val().trim();
-
-		console.log(textVal);
-
 
 		if(textVal != ""){
 
@@ -27,7 +26,6 @@ var textVal;
 
 		apiUrl = "http://api.giphy.com/v1/gifs/search?q=";
 		apiUrl = apiUrl+ $(this).attr('data-search') + apiPlus;
-		console.log(apiUrl);
 
 		$('#animalPics').empty();
 
@@ -35,7 +33,6 @@ var textVal;
 			url: apiUrl,
 			method: 'GET'
 		}).done(function(animal){
-			console.log(animal);
 
 			for(var i = 0; i < 10; i++){
 
@@ -53,5 +50,24 @@ var textVal;
 			}
 
 		});
+
+	});
+
+	$("#animalPics").on('click', ".animalDiv", function(e){
+
+		status = $(e.target).attr('data-status');
+
+		if(status == 'pic'){
+
+			$(e.target).attr('src', $(e.target).attr('data-gif'));
+			$(e.target).attr('data-status', 'gif');
+
+
+		} else if(status == 'gif'){
+
+			$(e.target).attr('src', $(e.target).attr('data-pic'));
+			$(e.target).attr('data-status', 'pic');
+
+		}
 
 	});
