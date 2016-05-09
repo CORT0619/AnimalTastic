@@ -42,7 +42,7 @@ var status;
 
 				var newImg = $('<img>').attr({'src': animal.data[i].images.downsized_still.url,
 											  'data-pic': animal.data[i].images.downsized_still.url,
-											  'data-gif': animal.data[i].url,
+											  'data-gif': animal.data[i].images.downsized.url,
 											  'data-status': 'pic',
 											  'margin': '10px 10px'});
 				$(newDiv).append(newImg);
