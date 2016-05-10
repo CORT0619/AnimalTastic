@@ -1,10 +1,10 @@
 var textVal;
 var newButton;
 var apiUrl;
-var apiPlus = "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg-13";
+//var apiPlus = "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg-13";
 var status;
 
-	//var apiPlus = "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg";
+	var apiPlus = "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg";
 
 	$('#submit').on('click', function(){
 
@@ -18,7 +18,9 @@ var status;
 
 			$('#getAnimal').val("");
 			
-		} 
+		}
+
+		$('#animalButtons').addClass('addAnimalButtons');
 
 	});
 
