@@ -36,6 +36,8 @@ var status;
 			method: 'GET'
 		}).done(function(animal){
 
+			$("#animalPics").addClass("addAnimalPics");
+
 			for(var i = 0; i < 10; i++){
 
 				var newDiv = $('<div class="animalDiv">');

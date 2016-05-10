@@ -2,7 +2,8 @@ body {font-weight: bold;
 	  background-color: #989898}
 
 #animalButtons {float: left;
-				width: 600px;
+				/*width: 600px;*/
+				width: 60%;
 				margin-top: 25px;}
 
 .addAnimalButtons {border-radius: 5px;
@@ -15,7 +16,7 @@ label {font-weight: bold;
 				 margin-top: 25px;}
 
 #animalPics {clear: both;
-			 float: left;}
+}
 
 button, input[type=submit] {background-color: #008080;
 							color: #FFF;
@@ -46,5 +47,17 @@ input[type=text] {width: 400px;
 
 .jumbotron p {color: #000;}	
 
-#animalPics {border: 3px solid #FFF; }
+.addAnimalPics {border: 3px solid #008080;
+				margin: 100px auto;
+				border-radius: 3px;
+				background-color: #008080;
+				color: #FFF;
+				width: 85%;
+				/*clear: both*/
+				float: left;
+				position: relative;
+				left: 10%;}			
+
+img {width: 200px;
+	 height: 200px}
 
